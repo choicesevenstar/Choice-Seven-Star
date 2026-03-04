@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choice Seven Star | Product Details</title>
+  <meta name="description" content="Product details and WhatsApp ordering for Choice Seven Star." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png?v=2" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/logo.png?v=2" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="bg-orb orb-one" aria-hidden="true"></div>
+  <div class="bg-orb orb-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="Choice Seven Star Home">
+        <img class="brand-logo" src="assets/images/sevenstar-logo.svg" alt="Choice Seven Star logo" />
+        <span class="brand-name">Choice Seven Star</span>
+      </a>
+      <nav class="header-links" aria-label="Main">
+        <a href="index.html#products">Products</a>
+        <a href="index.html#categories">Categories</a>
+      </nav>
+      <a href="index.html" class="btn btn-outline">Back to Store</a>
+    </div>
+  </header>
+
+  <main class="container section product-detail-main">
+    <article id="productDetailCard" class="panel product-detail-card hidden" aria-live="polite">
+      <div class="product-detail-grid">
+        <div class="product-detail-media">
+          <img id="detailImage" class="product-detail-image" src="" alt="" loading="lazy" />
+        </div>
+        <div class="product-detail-content">
+          <p id="detailCategory" class="product-category"></p>
+          <h1 id="detailName" class="product-detail-title"></h1>
+          <p id="detailDescription" class="product-detail-description"></p>
+          <p id="detailPrice" class="product-detail-price"></p>
+          <a id="detailOrderButton" class="btn btn-whatsapp detail-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+      </div>
+    </article>
+
+    <article id="detailLoading" class="panel detail-state-card">
+      <p>Loading product details...</p>
+    </article>
+
+    <article id="detailError" class="panel detail-state-card hidden">
+      <h2>Product not available</h2>
+      <p>This product could not be found. Please return to the storefront and try another item.</p>
+      <a href="index.html#products" class="btn btn-solid">Go to Products</a>
+    </article>
+
+    <section id="relatedSection" class="section related-section hidden">
+      <div class="section-head">
+        <h2>Related Products</h2>
+        <p>More products you may like.</p>
+      </div>
+      <div id="relatedProductsGrid" class="related-grid"></div>
+      <p id="relatedEmptyState" class="empty-state hidden">No related products available right now.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Choice Seven Star</p>
+      <p>Quality Online Products</p>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/product-detail.js"></script>
+  <script type="module" src="assets/js/animations.js"></script>
+</body>
+</html>

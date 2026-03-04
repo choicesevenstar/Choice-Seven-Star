@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+  <title id="title">Choice Seven Star Logo</title>
+  <desc id="desc">Seven Star quality online products logo with stars and stylized seven mark.</desc>
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f5fba"/>
+      <stop offset="100%" stop-color="#1a4499"/>
+    </linearGradient>
+    <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#30324f"/>
+      <stop offset="100%" stop-color="#1f2136"/>
+    </linearGradient>
+    <symbol id="star" viewBox="0 0 100 100">
+      <polygon points="50,2 61,35 96,35 67,56 78,92 50,71 22,92 33,56 4,35 39,35"/>
+    </symbol>
+  </defs>
+
+  <g fill="url(#blueGrad)">
+    <use href="#star" x="74" y="162" width="64" height="64"/>
+    <use href="#star" x="150" y="114" width="108" height="108"/>
+    <use href="#star" x="274" y="66" width="162" height="162"/>
+    <use href="#star" x="548" y="66" width="162" height="162"/>
+    <use href="#star" x="740" y="66" width="162" height="162"/>
+    <use href="#star" x="914" y="114" width="108" height="108"/>
+    <use href="#star" x="1040" y="162" width="64" height="64"/>
+  </g>
+
+  <g transform="translate(462 36)">
+    <use href="#star" width="262" height="262" fill="url(#inkGrad)"/>
+    <path d="M116 76h126l-158 178h-49l109-123h-88z" fill="#ffffff"/>
+    <path d="M71 112h113l-102 116h-24z" fill="#2b53ae" opacity="0.92"/>
+  </g>
+
+  <g font-family="'Arial Black', 'League Spartan', sans-serif" font-weight="900" text-anchor="middle">
+    <text x="700" y="342" font-size="144" letter-spacing="4">
+      <tspan fill="url(#blueGrad)">SEVEN</tspan><tspan fill="url(#inkGrad)">STAR</tspan>
+    </text>
+    <line x1="64" y1="390" x2="1336" y2="390" stroke="#7f8390" stroke-width="3"/>
+    <text x="700" y="472" font-family="'Montserrat', 'Source Sans 3', sans-serif" font-size="60" font-weight="500" letter-spacing="18" fill="#7a7d86">QUALITY ONLINE</text>
+    <text x="700" y="540" font-family="'Montserrat', 'Source Sans 3', sans-serif" font-size="60" font-weight="500" letter-spacing="18" fill="#7a7d86">PRODUCTS</text>
+  </g>
+</svg>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choice Seven Star</title>
+  <meta name="description" content="Choice Seven Star Clothing Brand." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png?v=2" />
+  <link rel="shortcut icon" type="image/png" href="assets/images/logo.png?v=2" />
+  <link rel="apple-touch-icon" href="assets/images/logo.png?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+  <div class="bg-orb orb-one" aria-hidden="true"></div>
+  <div class="bg-orb orb-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="Choice Seven Star Home">
+        <img class="brand-logo" src="assets/images/sevenstar-logo.svg" alt="Choice Seven Star logo" />
+        <span class="brand-name">Choice Seven Star</span>
+      </a>
+      <nav class="header-links" aria-label="Main">
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+      </nav>
+      <a id="globalWhatsappLink" class="btn btn-outline" href="#" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Choice Seven Star</p>
+        <h1>CHOICE SEVEN STAR CLOTHING BRAND.</h1>
+        <p class="hero-text">Quality Online Products.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-solid">Explore Products</a>
+          <a href="#categories" class="btn btn-soft">Browse Categories</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container feature-strip" aria-label="Highlights">
+      <p>Fast response support</p>
+      <p>Carefully selected styles</p>
+      <p>Always synced inventory</p>
+    </section>
+
+    <section id="categories" class="container section">
+      <div class="section-head">
+        <h2>Shop by Category</h2>
+        <p>Choose your style and filter products instantly.</p>
+      </div>
+      <div id="categoryFilters" class="category-filters" role="list"></div>
+    </section>
+
+    <section id="products" class="container section">
+      <div class="section-head">
+        <h2>Products</h2>
+        <p>30 products per page for fast browsing.</p>
+      </div>
+      <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state hidden">No products available right now.</p>
+      <nav id="pagination" class="pagination hidden" aria-label="Product pages"></nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Choice Seven Star</p>
+      <p>Whatsapp: +92 301 3331955</p>
+    </div>
+  </footer>
+
+  <template id="productCardTemplate">
+    <article class="product-card">
+      <div class="product-image-wrap">
+        <img class="product-image" src="" alt="" loading="lazy" />
+        <span class="new-badge hidden">New</span>
+      </div>
+      <div class="product-body">
+        <p class="product-category"></p>
+        <h3 class="product-name"></h3>
+        <p class="product-description"></p>
+        <div class="product-meta">
+          <strong class="product-price"></strong>
+          <a class="btn btn-whatsapp order-button" href="#" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="assets/js/storefront.js"></script>
+  <script type="module" src="assets/js/animations.js"></script>
+</body>
+</html>
